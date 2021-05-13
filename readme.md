@@ -1,6 +1,6 @@
 # ValheimFPSPlus
 
-![ConfigurationManager](./doc/logo.jpg)
+![Logo](./doc/logo.jpg)
 
 This mod allows you to change the quality settings Valheim doesn't give you access to. The configuration uses BepInEx's builtin config-system. This allows a configuration even while the game is running.
 
@@ -8,11 +8,11 @@ The default configutation of this mod uses settings to maximize the game's frame
 
 ## Without Mod
 
-![ConfigurationManager](./doc/withoutmod.jpg)
+![WithoutMod](./doc/withoutmod.jpg)
 
 ## With Mod
 
-![ConfigurationManager](./doc/withmod.jpg)
+![WithMod](./doc/withmod.jpg)
 
 # Installation (manual)
 
