@@ -49,8 +49,8 @@ namespace ValheimFPSPlus
             this.LodBias = plugin.Config.Bind<float>(
                 "General",
                 "LodBias",
-                0.3f,
-                "Global multiplier for the LOD's switching distance.\nValheim Default: 2.0\nRecommended: 0.3"
+                1.3f,
+                "Global multiplier for the LOD's switching distance.\nValheim Default: 2.0\nRecommended: 1.3"
             );
             this.LodBias.SettingChanged += Config_SettingChanged;
 

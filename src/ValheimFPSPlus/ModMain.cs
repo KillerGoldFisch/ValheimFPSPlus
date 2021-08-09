@@ -12,7 +12,7 @@ using UnityEngine;
 
 namespace ValheimFPSPlus
 {
-    [BepInPlugin(PluginId, "ValheimFPSPlus", "1.1.0")]
+    [BepInPlugin(PluginId, "ValheimFPSPlus", "1.1.1")]
     [BepInProcess("valheim.exe")]
     public class ModMain : BaseUnityPlugin
     {

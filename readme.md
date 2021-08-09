@@ -249,3 +249,14 @@ If enabled, vegetation will have smoothed edges, if disabled all plants will hav
 ### Recommended
 
 `False`
+
+
+# Changehistory
+
+## `1.1.1` 2021-08-09
+
+ * Change default value of `LodBias` from `0.3` to `1.3`
+
+## `1.1.0` 2021-08-09
+
+ * Add `NoSnowstorms` option
