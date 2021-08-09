@@ -30,6 +30,18 @@ Or you can use [BepInEx's ConfigurationManager](https://github.com/BepInEx/BepIn
 
 # Setting
 
+## NoSnowstorms
+
+Replaces the resource-hungry snowstorm with normal snow
+
+### Valheim Default
+
+`false`
+
+### Recommended
+
+`true`
+
 ## [AnisotropicFiltering](https://docs.unity3d.com/ScriptReference/QualitySettings-anisotropicFiltering.html)
 
 Anisotropic filtering mode.

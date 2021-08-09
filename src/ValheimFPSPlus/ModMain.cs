@@ -9,25 +9,35 @@ using BepInEx;
 using HarmonyLib;
 using UnityEngine;
 
+
 namespace ValheimFPSPlus
 {
-    [BepInPlugin(PluginId, "ValheimFPSPlus", "1.0.0")]
+    [BepInPlugin(PluginId, "ValheimFPSPlus", "1.1.0")]
     [BepInProcess("valheim.exe")]
     public class ModMain : BaseUnityPlugin
     {
         public const string PluginId = "KillerGoldFisch.ValheimFPSPlus";
 
+        public static ModMain Instance { get; private set; }
+
         private Harmony _harmony;
         private ModConfig _modConfig;
 
         #region EntrPoints
+
+        public ModMain()
+        {
+            Instance = this;
+        }
+
         private void Awake()
         {
             _modConfig = new ModConfig(this);
             _modConfig.SettingsChanged += (sender, args) => ApplyGraphicsSetting();
             _harmony = Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly(), PluginId);
 
-            //LogGraphicsSetting();
+            Logger.LogInfo("Original settings:");
+            LogGraphicsSetting();
             ApplyGraphicsSetting();
         }
 
@@ -60,7 +70,7 @@ namespace ValheimFPSPlus
             QualitySettings.softVegetation           = _modConfig.SoftVegetation.Value;
         }
 
-        private void LogGraphicsSetting() 
+        private void LogGraphicsSetting()
         {
             Logger.LogInfo("QualitySettings.anisotropicFiltering = " + QualitySettings.anisotropicFiltering.ToString());
             Logger.LogInfo("QualitySettings.lodBias = " + QualitySettings.lodBias.ToString());
@@ -77,5 +87,7 @@ namespace ValheimFPSPlus
             Logger.LogInfo("QualitySettings.softParticles = " + QualitySettings.softParticles.ToString());
             Logger.LogInfo("QualitySettings.softVegetation = " + QualitySettings.softVegetation.ToString());
         }
+
+        public void LogInfo(string msg) => Logger.LogInfo(msg);
     }
 }

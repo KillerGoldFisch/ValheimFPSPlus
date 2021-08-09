@@ -34,6 +34,9 @@
     <Reference Include="0Harmony">
       <HintPath>..\..\dep\0Harmony.dll</HintPath>
     </Reference>
+    <Reference Include="assembly_valheim">
+      <HintPath>..\..\dep\assembly_valheim.dll</HintPath>
+    </Reference>
     <Reference Include="BepInEx">
       <HintPath>..\..\dep\BepInEx.dll</HintPath>
     </Reference>
@@ -55,6 +58,7 @@
   <ItemGroup>
     <Compile Include="ModConfig.cs" />
     <Compile Include="ModMain.cs" />
+    <Compile Include="Patches\EnvMan_GetAvailableEnvironments.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

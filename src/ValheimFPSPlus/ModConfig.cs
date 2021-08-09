@@ -7,6 +7,9 @@ namespace ValheimFPSPlus
 {
     public class ModConfig
     {
+        public static ModConfig Instance { get; private set; }
+
+        public ConfigEntry<bool> NoSnowstorms { get; set; }
         public ConfigEntry<AnisotropicFiltering> AnisotropicFiltering { get; set; }
         public ConfigEntry<float> LodBias { get; set; }
         public ConfigEntry<int> MasterTextureLimit { get; set; }
@@ -26,6 +29,14 @@ namespace ValheimFPSPlus
 
         public ModConfig(BaseUnityPlugin plugin)
         {
+            Instance = this;
+
+            this.NoSnowstorms = plugin.Config.Bind<bool>(
+                "General",
+                "NoSnowstorms",
+                true,
+                "Replaces the resource-hungry snowstorm with normal snow"
+            );
 
             this.AnisotropicFiltering = plugin.Config.Bind<AnisotropicFiltering>(
                 "General",
