@@ -16,9 +16,13 @@ The default configutation of this mod uses settings to maximize the game's frame
 
 # Installation (manual)
 
-1. Extract the archive into a folder. **Do not extract into the game folder.**
-2. Move the contents of `plugins` folder into `<GameDirectory>\BepInEx\plugins`.
-3. Run the game.
+A general guide:
+[![Alt text](https://img.youtube.com/vi/BjWVFE-_-9Y/0.jpg)](https://youtu.be/BjWVFE-_-9Y?t=168)
+
+1. Install the [BepInEx](https://valheim.thunderstore.io/package/denikson/BepInExPack_Valheim/) mod loader.
+2. Extract the archive into a folder. **Do not extract into the game folder.**
+3. Move the contents of `plugins` folder into `<GameDirectory>\BepInEx\plugins`.
+4. Run the game.
 
 # Configuration
 
