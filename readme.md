@@ -17,6 +17,7 @@ The default configutation of this mod uses settings to maximize the game's frame
 # Installation (manual)
 
 A general guide:
+
 [![Alt text](https://img.youtube.com/vi/BjWVFE-_-9Y/0.jpg)](https://youtu.be/BjWVFE-_-9Y?t=168)
 
 1. Install the [BepInEx](https://valheim.thunderstore.io/package/denikson/BepInExPack_Valheim/) mod loader.
