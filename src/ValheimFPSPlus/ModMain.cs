@@ -12,7 +12,7 @@ using UnityEngine;
 
 namespace ValheimFPSPlus
 {
-    [BepInPlugin(PluginId, "ValheimFPSPlus", "1.1.1")]
+    [BepInPlugin(PluginId, "ValheimFPSPlus", "1.1.2")]
     [BepInProcess("valheim.exe")]
     public class ModMain : BaseUnityPlugin
     {
@@ -68,6 +68,8 @@ namespace ValheimFPSPlus
             QualitySettings.skinWeights              = _modConfig.SkinWeights.Value;
             QualitySettings.softParticles            = _modConfig.SoftParticles.Value;
             QualitySettings.softVegetation           = _modConfig.SoftVegetation.Value;
+
+            Logger.LogInfo("Quality settings applied!");
         }
 
         private void LogGraphicsSetting()
